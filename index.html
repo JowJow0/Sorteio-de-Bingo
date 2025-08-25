@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorteio de Bingo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <!-- Logo  -->
+  <img id="logo" src="image/image.png" alt="Logo">
+
+  <h1>Sistema de Sorteio de Bingo</h1>
+
+  <div class="numero-atual" id="numeroAtual">--</div>
+
+  <button onclick="sortearNumero()">Sortear Número</button>
+  <button onclick="reiniciar()">Reiniciar</button>
+
+    <!-- Botão de alternância com ícone, Escuro/Claro -->
+  <button id="btnTema" onclick="alternarTema()">🌙 Modo Escuro</button>
+
+  <h2>Números Sorteados:</h2>
+  <div class="tabela-bingo">
+    <div class="coluna" id="colunaB">
+      <h3>B</h3>
+      <div class="linha-numeros" id="linhaB" data-letra="B"></div>
+    </div>
+    <div class="coluna" id="colunaI">
+      <h3>I</h3>
+      <div class="linha-numeros" id="linhaI" data-letra="I"></div>
+    </div>
+    <div class="coluna" id="colunaN">
+      <h3>N</h3>
+      <div class="linha-numeros" id="linhaN" data-letra="N"></div>
+    </div>
+    <div class="coluna" id="colunaG">
+      <h3>G</h3>
+      <div class="linha-numeros" id="linhaG" data-letra="G"></div>
+    </div>
+    <div class="coluna" id="colunaO">
+      <h3>O</h3>
+      <div class="linha-numeros" id="linhaO" data-letra="O"></div>
+    </div>
+  </div>
+
+  <!-- Som do bingo -->
+  <audio id="somBingo" src="song/ding-36029.mp3" preload="auto"></audio>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- Adicione no final do <body> -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo / Nome -->
+    <div class="footer-logo">
+      🎲 Bingo Online
+    </div>
+
+    <!-- Links rápidos -->
+    <div class="footer-links">
+      <a href="#">Sobre</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="footer-social">
+      <a href="https://instagram.com/jhowjonathan_1" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="www.linkedin.com/in/jonathan-ferreira-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/JowJow0" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+
+  <p class="footer-copy">© 2025 Jonathan Araujo Ferreira. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Importa os ícones do Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <script src="script.js"></script>
+</body>
+</html>
